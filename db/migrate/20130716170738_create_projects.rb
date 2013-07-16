@@ -4,6 +4,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :title
       t.text :objective
       t.boolean :completed
+      t.references :user, index: true
 
       t.timestamps
     end
